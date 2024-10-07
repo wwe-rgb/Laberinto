@@ -2,8 +2,8 @@ package ico.fes.aragon.unam.mx.clases;
 
 import java.util.LinkedList;
 
-public class Pila<E> {
-    private LinkedList<E> stack;
+public class Pila<T> {
+    private LinkedList<T> stack;
 
     public Pila() {
         stack = new LinkedList<>();
@@ -21,14 +21,14 @@ public class Pila<E> {
     public int longitud(){
         return this.stack.size();
     }
-    public void push(E item) {
+    public void push(T item) {
         stack.addFirst(item);
     }
     public char pop() {
         stack.removeLast();
         return 0;
     }
-   public E peek() {
+   public T peek() {
         return stack.getFirst();
    }
 
